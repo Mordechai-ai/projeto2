@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} Home {%endblock%}
+
+{%block content%}
+<br>
+<h1>Formulário Teste</h1>
+<br>
+<form action="response"  method="post" enctype="multipart/form-data">
+  Nome:
+    <input type="text" name="pessoa" value="" required></input><br><br>
+  Email:
+    <input type="email" name="email" value="">
+    <input type="submit" value="Envie">
+</form>
+
+{%endblock%}
+
+{% block content2 %}
+<br>
+<h1>Soma de Dois Números</h1>
+<br>
+<form action="soma"  method="post" enctype="multipart/form-data">
+  N1:
+    <input type="text" name="n1" value="" required></input><br><br>
+   N2: <input type="text" name="n2" value="" required></input><br><br>
+    <input type="submit" value="Envie">
+</form>
+{% endblock %}

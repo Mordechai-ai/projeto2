@@ -1,0 +1,15 @@
+{%block title%}{%endblock%}
+
+{%block content%}
+
+Formulário Go2market
+
+<form action="go2mktprocessform" method="post">
+Nome: <input type="text" name="nom" value="" required><br><br>
+Email: <input type="email" name="mai" placeholder="Digite seu email" value="{{mai if mai}}" required><br><br>
+Mensagem: <input type="text" name="msg" value="" required><br><br>
+    <input type="submit" value="Enviar">
+
+</form>
+
+{%endblock%}
